@@ -1,0 +1,63 @@
+{
+  "name": "@qingu/vue-email",
+  "type": "module",
+  "version": "1.0.23",
+  "description": "Fancy-ish emails using Vue components",
+  "author": "Qin Guan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qin-guan/vue-email"
+  },
+  "keywords": [
+    "remark",
+    "markdown",
+    "unified",
+    "vue",
+    "email",
+    "rehype",
+    "hast"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "require": "./dist/main.cjs",
+      "import": "./dist/main.js"
+    }
+  },
+  "main": "./dist/main.cjs",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "histoire dev",
+    "build": "vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache --fix ."
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "@qingu/remark-vue": "^1.0.12",
+    "html-to-text": "^9.0.5",
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.7",
+    "@histoire/plugin-vue": "^0.16.1",
+    "@types/html-to-text": "^9.0.1",
+    "@types/node": "^20.4.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "eslint": "^8.44.0",
+    "histoire": "^0.16.2",
+    "pathe": "^1.1.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.1.0",
+    "vue-tsc": "^1.8.4"
+  }
+}
